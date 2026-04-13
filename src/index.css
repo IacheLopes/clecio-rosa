@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+  /* === BRAND COLORS === */
+  --brand-navy: #0a2647;
+  --brand-navy-mid: #0d3260;
+  --brand-navy-dark: #06101e;
+  --brand-gold: #f0a500;
+  --brand-gold-dark: #cc8c00;
+  --brand-gold-subtle: rgba(240, 165, 0, 0.12);
+  --brand-surface: #f4f7fa;
+  --brand-wpp: #25D366;
+  --brand-wpp-dark: #1aab52;
+
+  /* === BACKGROUND COLORS === */
+  --color-background-primary: #ffffff;
+  --color-background-secondary: #f9f8f8;
+  --color-background-tertiary: #f3f2f0;
+  --color-background-accent-brand: var(--brand-navy);
+  --color-background-state-hover-primary: #ebe9e7;
+  --color-background-state-hover-accent-brand: var(--brand-navy-mid);
+  --color-background-state-hover-tertiary: #d3cec9;
+  --color-background-state-hover-secondary: #dfdbd8;
+  --color-background-inverse-primary: #23201d;
+  --color-background-inverse-state-hover-secondary: #433d37;
+
+  /* === CONTENT COLORS === */
+  --color-content-primary: #1a202c;
+  --color-content-secondary: #4a5568;
+  --color-content-tertiary: #718096;
+  --color-content-accent-brand: var(--brand-navy);
+  --color-content-state-hover-accent-brand: var(--brand-navy-mid);
+  --color-content-state-hover-primary: #718096;
+  --color-content-state-inactive-primary: #a0aec0;
+  --color-content-state-inactive-secondary: #e2e8f0;
+  --color-content-inverse-primary: #ffffff;
+  --color-content-inverse-tertiary: #ffffff;
+
+  /* === BORDER COLORS === */
+  --color-border-primary: #e2e8f0;
+  --color-border-secondary: #f4f7fa;
+  --color-border-tertiary: #ffffff;
+  --color-border-accent-brand: var(--brand-navy);
+  --color-border-state-hover-primary: #718096;
+  --color-border-state-hover-tertiary: #ebe9e7;
+  --color-border-state-focused-accent-brand: var(--brand-navy);
+  --color-border-state-focused-primary: #1a202c;
+  --color-border-inverse-primary: #1a202c;
+  --color-border-inverse-state-hover-secondary: #2d3748;
+
+  /* === TYPOGRAPHY === */
+  --f-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Font Weights */
+  --f-weight-regular: 400;
+  --f-weight-medium: 500;
+  --f-weight-semibold: 600;
+  --f-weight-bold: 700;
+  --f-weight-extrabold: 800;
+
+  /* === SPACING === */
+  --space-0x: 0px;
+  --space-1x: 2px;
+  --space-2x: 4px;
+  --space-3x: 6px;
+  --space-4x: 8px;
+  --space-5x: 10px;
+  --space-6x: 12px;
+  --space-7x: 14px;
+  --space-8x: 16px;
+  --space-10x: 20px;
+  --space-11x: 22px;
+  --space-12x: 24px;
+  --space-15x: 30px;
+  --space-16x: 32px;
+  --space-20x: 40px;
+  --space-24x: 48px;
+  --space-32x: 64px;
+  --space-36x: 72px;
+  --space-50x: 100px;
+
+  /* === BORDER RADIUS === */
+  --radius-2x: 4px;
+  --radius-3x: 6px;
+  --radius-4x: 8px;
+  --radius-6x: 12px;
+  --radius-7x: 14px;
+  --radius-8x: 16px;
+  --radius-9x: 18px;
+  --radius-12x: 24px;
+  --radius-16x: 32px;
+  --radius-full: 1998px;
+
+  /* === SHADOWS === */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.12);
+
+  /* === TRANSITIONS === */
+  --transition-base: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  width: 100%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 88px;
+}
+
+body {
+  font-family: var(--f-family);
+  font-size: 16px;
+  font-weight: var(--f-weight-regular);
+  line-height: 1.6;
+  color: var(--color-content-primary);
+  background-color: var(--color-background-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+#root {
+  min-height: 100vh;
+}
